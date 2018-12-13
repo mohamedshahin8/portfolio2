@@ -1,0 +1,491 @@
+/* start global */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+font-family: sans-serif;
+
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    min-width: 1200px;
+
+}
+
+ul {
+  list-style: none; /* اي ul هييعمل عليها الخصائص دي */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar,
+.header,
+.services,
+.our-team,
+.testim,
+.projects,
+.footer {min-width: 1200px;}
+/* end global */
+
+/* start navbar */
+
+.navbar{
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  height: 0px;
+}
+
+.navbar .brand{
+  float: left;
+  width:50%;
+  font-size: 20px;
+}
+
+.navbar .links{
+  padding-left: 10px;
+  float: left;
+  width: 50%;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.navbar .links li{
+
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 10px;
+  cursor: pointer;
+
+}
+.navbar .links li a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .links li.active a , /* بيعمل الخصائص دي على اللينكات */
+.navbar .links li a:hover{
+  color: #149da8;
+
+}
+
+.navbar .links li.active ,
+.navbar .links li:hover{
+  border-bottom: 2px solid #149da8;
+
+}
+
+/* end navbar */
+
+/* start header */
+.header{
+    background:url('../images/slide2.jpg');
+    width: 100%
+
+}
+
+.header .bx-wrapper{       /*خصائص ال slider */
+  height: 100%
+}
+
+.header .bx-wrapper .bx-viewport{
+  box-shadow: none;
+  border: 0;
+  background: none;
+  height: 100% !important;
+  text-align: center;
+}
+.header .bxslider {
+  height: 100%;
+
+
+}
+.header .bxslider  li{
+  display: block;
+  color: white;
+  height: 300px;
+}
+
+.header .bxslider  li h2{
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold
+
+}
+.header .bxslider  li h2 span{
+  font-size: 50px;
+  color: #149da8;
+}
+.header .bxslider  li p{
+
+  font-size: 20px;
+}
+
+
+
+/* end header */
+
+/* start services */
+
+ .services {
+   padding: 80px 20px 40px;
+ }
+ .services h2{
+   margin: 0 0 50px;
+   font-weight: normal;
+ }
+ .services .item{
+   float: left;
+   width: 33.3333%;
+   background-color: #f2fffd;
+   margin-bottom: 20px;
+ }
+.services .item i{
+  color: #149da8;
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+.services .item .info {
+  float: left;
+  width: 75%;
+
+}
+
+.services .item .info h3{
+  font-weight: normal;
+  color: #2c302f;
+}
+.services .item .info p{
+  font-weight: normal;
+  color: #767f7d;
+}
+.separator {
+  border: 1px solid #b8c1bf;
+}
+
+
+.our-team{
+  padding: 20px 40px;
+}
+.our-team .info-box{
+  float: left;
+
+}
+.our-team .image-box{
+  margin-top: 30px;
+  cursor: pointer;
+
+}
+
+
+.our-team .info-box:first-child{
+  width: 35%;
+}
+
+.our-team .image-box:not(:first-child){
+  width: 12.25%;
+  margin-left: 1%;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+.our-team .image-box:not(:first-child) img{
+  width: 100%;
+}
+.our-team .image-box:not(:first-child) .overlay{
+  position: absolute;
+  line-height: 150px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #149da8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(20, 157, 168, 0.8);
+
+}
+.our-team .image-box:not(:first-child):hover .overlay{
+  display: block;
+}
+
+
+.our-team .info-box p{
+  font-weight: normal;
+  color: #767f7d;
+
+}
+.our-team .image-box{
+  float: left;
+}
+/*end services */
+
+/*start testmonials */
+.testim{
+  background: url('../images/lform_designing_product_catalog_blog-1600x1080.jpg');
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  position: relative;
+  padding: 80px 0;
+
+}
+
+.testim .t-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.testim h2{
+  font-size: 40px;
+  margin: 80px 0;
+  color: #e3e5e8;
+
+}
+
+.testim q{
+  margin-top: 40px;
+  display: block;
+  font-size: 20px;
+  line-height: 2;
+  color: #b5b9bf;
+}
+.testim p{
+  color: #149da8;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.testim .slider > div{
+  display: none;
+
+}
+.testim .slider .active{
+  display: block;
+
+}
+
+
+/*end testmonials */
+
+/*start projects */
+
+.projects {
+  height: 800px;
+  padding: 80px 0 20px;
+}
+.projects h2{
+  font-weight:  normal;
+
+}
+
+.projects ul {
+
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+  }
+
+.projects ul li{
+  display: inline-block;
+  border: 2px solid #b5b9bf;
+  padding: 12px;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #767f7d;
+
+
+}
+.projects ul li.selected {
+  background-color: #149da8;
+  border: 2px solid #149da8;
+  color: #FFF;
+}
+.projects .gallery {
+  cursor: pointer;
+
+}
+.projects .gallery .row > div:nth-child(2){  /* الصوره التانيه فى الصف */
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+
+.projects .gallery .row > div{
+  width: 32.335%;
+  margin-bottom: 12px;
+  float: left;
+  position: relative; /* علشان نعرف نعمل ال overlay */
+}
+
+.projects .gallery .row > div .over{
+  position: absolute;
+  line-height: 232px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #149da8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(20, 157, 168, 0.8);
+  font-weight: bold;
+}
+
+.projects .gallery .row > div .heart{
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+  display: none;
+}
+.projects .gallery .row > div:hover .over,
+.projects .gallery .row > div:hover .heart{
+  display: block;
+}
+
+.projects .gallery .row > div img{
+  width: 100%;
+}
+
+.projects .mix{
+  display: none;
+}
+.projects .shuffled li{
+  cursor: pointer;
+}
+
+
+
+/*end projects */
+
+
+/*start footer */
+
+.footer {
+  background-color: #232323;
+  color: #EEE;
+  padding: 40px 0;
+  overflow: hidden;
+  height: 400px;
+}
+.footer .col{
+  width: 25%;
+  float: left;
+}
+.footer .col h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #EEE;
+
+}
+
+.footer .col p{
+  font-weight: normal;
+  color: #767f7d;
+  margin-right: 15px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.footer .col i{
+  display: inline-block;
+  border: 1px solid #767f7d;
+  width: 40px;
+  padding: 10px;
+  color: #767f7d;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+
+.footer .tags span{
+  display: inline-block;
+  border: 1px solid #767f7d;
+  padding: 10px;
+  color: #767f7d;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.footer .col > div img{
+  display: block;
+}
+
+.footer .recent  div{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.footer .recent  div img {
+  float: left;
+  margin-right: 10px;
+
+}
+.footer .recent div h4 {
+  margin: 6px 0;
+  color: #CCC;
+  font-weight: normal;
+}
+.footer .recent div span {
+  margin-top: 2px;
+  color: #767f7d;
+}
+
+.footer .blog li {
+  color: #CCC;
+  border-bottom: 1px solid #767f7d;
+  padding: 15px 20px;
+}
+
+
+
+
+.footer .copyright{
+
+  color: #767f7d;
+
+}
+
+/* end footer */
+
+/* start framework */
+
+.clearfix{             /*بستدعيه بعد اي float */
+  clear: both;
+}
+.special-heading{     /*لو استدعيته فى اي header بيعملي الخصائص اللي تحت دي عليه*/
+  position: relative;
+}
+
+.special-heading:after{
+
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #333;
+  top: 40px;
+  left: 0;
+}
+/*end framework */
